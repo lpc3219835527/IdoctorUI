@@ -1,27 +1,49 @@
-/* pages/search/search.wxss */
-page{
-    background-color:rgb(243, 243, 250);
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #efeff4;
+  border-top: 1rpx solid #d7d6dc;
+  border-bottom: 1rpx solid #d7d6dc;
 }
-.searchcion{
-    width: 24px;
-    height: 24px;
-    text-align: center;
-    margin-top: 5rpx
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
 }
-.search input{
-    width: 85%;
-    border-radius: 5px;
-    background: #fff;
-    border: none;
-    font-size: 12px;
-    padding:1% 2.5%;
-    margin-right: 5px;
-    }
-.search button{
-    line-height:30px;
- 
-    text-align: center;
-    border: none;
-    font-size: 28rpx;
-    background: white
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09bb07;
+  white-space: nowrap;
 }

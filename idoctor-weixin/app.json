@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/logs/logs",
+    "pages/index/index",
     "pages/my/my",
     "pages/search/search"
   ],
@@ -23,20 +23,10 @@
         "selectedIconPath": "image/home.png"
       },
       {
-        "pagePath": "pages/search/search",
-        "iconPath": "image/icon-manage.png",
-        "selectedIconPath": "image/icon-manage.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "image/icon-comt.png",
-        "selectedIconPath": "image/icon-comt.png"
-      },
-        {
-          "pagePath": "pages/my/my",
-          "iconPath": "image/icon-user.png",
-          "selectedIconPath": "image/icon-user.png"
-        }
+        "pagePath": "pages/my/my",
+        "iconPath": "image/icon-user.png",
+        "selectedIconPath": "image/icon-user.png"
+      }
     ]
   }
 }

@@ -1,6 +1,12 @@
+<view class="search">
+  <view class="df search_arr">
+    <icon class="searchcion" size='16' type='search'></icon>
+    <input class="sousuo" disabled placeholder="搜索" bindtap='search' />
+  </view>
+</view>
+
 <view>
-  <swiper indicator-dots="{{indicatorDots}}" 
-    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
         <image src="{{item}}" class="slide-image" />
@@ -8,6 +14,7 @@
     </block>
   </swiper>
 </view>
+
 <view class="category">
   <view class="category_item" wx:for="{{iconArray}}">
     <view class="category_item_wrap">
@@ -20,36 +27,4 @@
     </view>
   </view>
 </view>
-<view>
-  <view class="singal_item" wx:for="{{itemArray}}">
-    <view class="singal_item_title">
-      <text>{{item.itemText}}</text>
-    </view>
-    <view class="singal_item_image">
-      <image bindload="cusImageLoad" src="{{item.itemUrl}}" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
-    </view>
-  </view>
-</view>
-<view>
-  <view class="commen_title">
-    <text>猜你喜欢</text>
-  </view>
-  <view class="single_goods">
-    <view class="single_image_wrap">
-      <image src="../../image/zhutu.jpg" class="single_goods_image"></image>
-    </view>
-    <view class="single_goods_infor">
-      <navigator url="../spdetail/spdetail">
-        <view class="single_goods_address">
-          <text>诸暨</text>
-        </view>
-        <view class="single_goods_price">
-          <text>¥169.00</text>
-          <view class="carImgWrap">
-            <image src="../../image/car.png" class="carImg"></image>
-          </view>
-        </view>
-      </navigator>
-    </view>
-  </view>
-</view>
+
